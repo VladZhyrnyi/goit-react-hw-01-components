@@ -8,7 +8,7 @@ export const ProfileCard = ({
   avatar,
   followers,
   views,
-  likes
+  likes,
 }) => {
   return (
     <div className={css.profile}>
@@ -20,15 +20,15 @@ export const ProfileCard = ({
       </div>
 
       <ul className={css.stats}>
-        <li>
+        <li className={css.stats__item}>
           <span className={css.label}>Followers</span>
           <span className={css.quantity}>{followers}</span>
         </li>
-        <li>
+        <li className={css.stats__item}>
           <span className={css.label}>Views</span>
           <span className={css.quantity}>{views}</span>
         </li>
-        <li>
+        <li className={css.stats__item}>
           <span className={css.label}>Likes</span>
           <span className={css.quantity}>{likes}</span>
         </li>

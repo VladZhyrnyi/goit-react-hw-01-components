@@ -1,7 +1,39 @@
-.item{}
+.wrapper {
+  padding: 10px;
+  position: relative;
+}
 
-.status{}
+.avatar{
+  width: 80px;
+  height: 80px;
+}
 
-.avatar{}
+.name{
+  margin-top: 10px;
+  display: inline-block;
 
-.name{}
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+
+.status{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  margin-left: 10px;
+
+  display: block;
+
+  border-radius: 50%;
+
+  background-color: red;
+}
+
+.online {
+  background-color: green;
+}

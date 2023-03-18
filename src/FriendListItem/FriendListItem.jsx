@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import clsx from 'clsx';
+
 
 import css from './FriendListItem.module.css';
 
@@ -8,11 +10,11 @@ export function FriendListItem ({avatar, name, isOnline}) {
     className += ' online';
   }
   return (
-    <li className={css.item}>
-      <span className={className}></span>
+    <div className={css.wrapper}>
       <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-      <p className={css.name}>{name}</p>
-    </li>
+      <span className={css.name}>{name}</span>
+      <span className={clsx(css.status, isOnline && css.online)}></span>
+    </div>
   );
 }
 

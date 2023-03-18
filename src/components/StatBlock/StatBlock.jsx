@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import css from './StatBlock.module.css';
 
 
-export const StatBlock = ({label, percentage}) => {
+export function StatBlock ({label, percentage}) {
   return (
-    <li className={css.item}>
+    <div className={css.wrapper}>
       <span className={css.label}>{label}</span>
       <span className={css.percentage}>{percentage}%</span>
-    </li>
+    </div>
   );
 };
 

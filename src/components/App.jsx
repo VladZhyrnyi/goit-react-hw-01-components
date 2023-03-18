@@ -10,7 +10,7 @@ import transactions from '../transactions.json';
 
 export const App = () => {
   return (
-    <div>
+    <div className="container">
       <ProfileCard
         username={user.username}
         tag={user.tag}
@@ -20,10 +20,10 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
       <FriendList friends={friends} />
-      <TransactionHistory transactions={transactions}/>
+      <Statistics title="Upload stats" stats={data} />
+
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 };
