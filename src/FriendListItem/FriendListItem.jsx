@@ -5,10 +5,6 @@ import clsx from 'clsx';
 import css from './FriendListItem.module.css';
 
 export function FriendListItem ({avatar, name, isOnline}) {
-  let className = css.status;
-  if(isOnline) {
-    className += ' online';
-  }
   return (
     <div className={css.wrapper}>
       <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
